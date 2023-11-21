@@ -2,7 +2,8 @@
 // import Bmi from "./bmi-calculator/Bmi";
 // import BoxShadow from "./components/BoxShadow";
 // import Unsplash from "./image-search/Unsplash";
-import Todo from "./todo/Todo";
+// import Todo from "./todo/Todo";
+import TipsCalculator from "./components/TipsCalculator";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       {/* <Bmi /> */}
       {/* <BoxShadow /> */}
       {/* <Unsplash /> */}
-      <Todo />
+      {/* <Todo /> */}
+      <TipsCalculator />
     </>
   );
 };
