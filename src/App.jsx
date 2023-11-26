@@ -3,7 +3,8 @@
 // import BoxShadow from "./components/BoxShadow";
 // import Unsplash from "./image-search/Unsplash";
 // import Todo from "./todo/Todo";
-import TipsCalculator from "./components/TipsCalculator";
+// import TipsCalculator from "./components/TipsCalculator";
+import CurrencyConverter from ".currency-converter/CurrencyConverter";
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
       {/* <BoxShadow /> */}
       {/* <Unsplash /> */}
       {/* <Todo /> */}
-      <TipsCalculator />
+      {/* <TipsCalculator /> */}
+      <CurrencyConverter />
     </>
   );
 };
