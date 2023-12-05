@@ -1,10 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "milligram/dist/milligram.css";
+// import "milligram/dist/milligram.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./components/home/Home.jsx";
+import Github from "./components/github/Github.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "github",
+        element: <Github />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

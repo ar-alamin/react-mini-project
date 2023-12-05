@@ -4,7 +4,10 @@
 // import Unsplash from "./image-search/Unsplash";
 // import Todo from "./todo/Todo";
 // import TipsCalculator from "./components/TipsCalculator";
-import CurrencyConverter from ".currency-converter/CurrencyConverter";
+// import CurrencyConverter from ".currency-converter/CurrencyConverter";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
@@ -15,7 +18,10 @@ const App = () => {
       {/* <Unsplash /> */}
       {/* <Todo /> */}
       {/* <TipsCalculator /> */}
-      <CurrencyConverter />
+      {/* <CurrencyConverter /> */}
+      <Header />
+      <Outlet />
+      <Footer />
     </>
   );
 };
